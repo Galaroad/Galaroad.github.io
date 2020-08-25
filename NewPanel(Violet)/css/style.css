@@ -40,7 +40,7 @@ body {
     display: block;
     width: 3rem;
     height: 3rem;
-    background: #282237;
+    background: #ffe300;
     border-radius: 1.625rem;
   }
   .butt.learn-more .circle .icon {
@@ -49,7 +49,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: white;
+    background: black;
   }
   .butt.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -65,13 +65,13 @@ body {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid white;
-    border-right: 0.125rem solid white;
+    border-top: 0.125rem solid black;
+    border-right: 0.125rem solid black;
     transform: rotate(45deg);
   }
   .butt:hover.learn-more .circle .icon.arrow::before {
-    border-top: 0.125rem solid #ffe300;
-    border-right: 0.125rem solid #ffe300;
+    border-top: 0.125rem solid black;
+    border-right: 0.125rem solid black;
     transition: 1s;
   }
   .butt.learn-more .button-text {
@@ -97,7 +97,7 @@ body {
     transform: translate(1rem, 0);
   }
   .butt:hover .button-text {
-    color: #ffe300;
+    color: black;
   }
 .panel {
     left: 0px;
@@ -182,13 +182,13 @@ body {
     margin-left: 85px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     max-width: 435px;
     min-width: 435px;
     border-radius: 50px 50px 50px 50px;
@@ -232,23 +232,22 @@ body {
     margin-left: 85px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     max-width: 435px;
     
     border-radius: 50px 50px 50px 50px;
 }
 .output {
-    background-color: green;
     margin-top: 150px;
 }
 .darkfield {
-    background-color: rgba(0, 0, 0, 0.502);
+    background-color: rgba(0, 0, 0, 0.402);
     max-width: 1653px;
     height: 392px;
     border: 7px solid #fee300;
@@ -259,13 +258,13 @@ body {
     margin-top: 64px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     min-width: 434px;
     height: 70px;
     line-height: 70px;
@@ -318,9 +317,7 @@ button {
     position: relative;
 }
 
-.pad {
- 
-}
+
 
 button .fill {
     
