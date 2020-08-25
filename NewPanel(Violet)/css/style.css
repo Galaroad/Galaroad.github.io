@@ -7,6 +7,7 @@ body {
     margin-right: 130px;
     margin: 0 auto;
     max-width: 1553px;
+    min-width: 1553px;
     position: relative;
     
 }
@@ -93,7 +94,7 @@ body {
     width: 100%;
   }
   .butt:hover .circle .icon.arrow {
-    background: #ffe300;
+    background: black;
     transform: translate(1rem, 0);
   }
   .butt:hover .button-text {
@@ -191,8 +192,7 @@ body {
     padding-bottom: 7px;
     max-width: 435px;
     min-width: 435px;
-    border-radius: 50px 50px 50px 50px;
-    
+    border-radius: 50px 50px 50px 50px; 
 }
 .link {
     background: green;
@@ -244,6 +244,7 @@ body {
     border-radius: 50px 50px 50px 50px;
 }
 .output {
+    background-color: green;
     margin-top: 150px;
 }
 .darkfield {
@@ -258,13 +259,13 @@ body {
     margin-top: 64px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 27px;
+    font-size: 29px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     min-width: 434px;
     height: 70px;
     line-height: 70px;
@@ -317,7 +318,9 @@ button {
     position: relative;
 }
 
-
+.pad {
+ 
+}
 
 button .fill {
     
