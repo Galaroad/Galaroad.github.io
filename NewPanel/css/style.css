@@ -11,13 +11,14 @@ body {
     
 }
 .header {
-    background-image: url(../image/head.png);
+    background-color: rgba(0, 0, 0, 0.602);
     
     margin: 0 -8px;
     margin-top: -16px;
 }
   .butt {
     position: relative;
+	margin: 5px;
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -37,10 +38,9 @@ body {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
-    margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #282936;
+    background: #ffe300;
     border-radius: 1.625rem;
   }
   .butt.learn-more .circle .icon {
@@ -49,7 +49,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #fff;
+    background: #1d1e22;
   }
   .butt.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -61,18 +61,18 @@ body {
   .butt.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: '';
-    top: -0.306rem;
+    top: -0.30rem;
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    border-top: 0.125rem solid #1d1e22;
+    border-right: 0.125rem solid #1d1e22;
     transform: rotate(45deg);
   }
   .butt:hover.learn-more .circle .icon.arrow::before {
-    border-top: 0.125rem solid #ffe300;
-    border-right: 0.125rem solid #ffe300;
-    transition: 0.3s;
+    border-top: 0.125rem solid #1d1e22;
+    border-right: 0.125rem solid #1d1e22;
+    transition: 1s;
   }
   .butt.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -93,11 +93,11 @@ body {
     width: 100%;
   }
   .butt:hover .circle .icon.arrow {
-    background: #ffe300;
+    background: #1d1e22;
     transform: translate(1rem, 0);
   }
   .butt:hover .button-text {
-    color: #ffe300;
+    color: #1d1e22;
   }
 .panel {
     left: 0px;
@@ -182,13 +182,13 @@ body {
     margin-left: 85px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     max-width: 435px;
     min-width: 435px;
     border-radius: 50px 50px 50px 50px;
@@ -232,13 +232,13 @@ body {
     margin-left: 85px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     max-width: 435px;
     
     border-radius: 50px 50px 50px 50px;
@@ -259,13 +259,13 @@ body {
     margin-top: 64px;
     font-family: "Russo One";
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 400;
     background: #fee300;
     border: 1px solid;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     min-width: 434px;
     height: 70px;
     line-height: 70px;
@@ -317,8 +317,6 @@ button {
     transition: .3s all ease;
     position: relative;
 }
-
-
 
 button .fill {
     
