@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+body {
+    background-image: url(../image/BGViolet.png);
+}
+.wrapper {
+    margin-left: 130px;
+    margin-right: 130px;
+    margin: 0 auto;
+    max-width: 1553px;
+    position: relative;
+    
+}
+.header {
+    background-color: rgba(0, 0, 0, 0.502);
+    
+    margin: 0 -8px;
+    margin-top: -16px;
+}
+  .butt {
+    position: relative;
+	margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  .butt.learn-more {
+    width: 12rem;
+    height: auto;
+  }
+  .butt.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: #282237;
+    border-radius: 1.625rem;
+  }
+  .butt.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: white;
+  }
+  .butt.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  .butt.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.30rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid white;
+    border-right: 0.125rem solid white;
+    transform: rotate(45deg);
+  }
+  .butt:hover.learn-more .circle .icon.arrow::before {
+    border-top: 0.125rem solid #ffe300;
+    border-right: 0.125rem solid #ffe300;
+    transition: 1s;
+  }
+  .butt.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .butt:hover .circle {
+    width: 100%;
+  }
+  .butt:hover .circle .icon.arrow {
+    background: #ffe300;
+    transform: translate(1rem, 0);
+  }
+  .butt:hover .button-text {
+    color: #ffe300;
+  }
+.panel {
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    list-style-type: none;
+}
+.light {
+    position: relative;
+    margin-left: 17px;
+    font-size: 200px;
+    font-family: "Tough Sans";
+    color: white;
+    line-height: 1.2;
+    z-index: -2;
+    text-shadow: 
+    0px 50px 250px #ffe300,
+    0px 50px 250px #ffe300,
+    0px 50px 250px #ffe300;
+    max-width: 435px;
+    
+    
+}
+.changer {
+    
+    margin-left: 22px;
+    padding-left: 14px;
+    margin-top: -55px;
+    font-size: 100px;
+    font-family: "Tough Sans";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    height: 100px;
+    max-width: 421px;
+}
+.shadow {
+    position: relative;
+    max-height: 295px;
+    margin-left: 85px;
+}
+.light::after {
+    content:"-";
+    position: absolute;
+    right: -100px;
+    top: calc(37% - 25px);
+    max-width: 40px;
+}
+.light::after {
+    font-size: 150px; 
+}
+.brend {
+    margin-top: 80px;
+}
+.brend > .wrapper > .string > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    font-size: 66.667px;
+    font-family: "Tough Sans";
+    color: white;
+    line-height: 1.2;
+    max-width: 741px;
+    text-align: center;
+    top: 15px;
+    right: 85px;
+    margin-right: 0;
+}
+.string {
+    display: flex;
+    align-items: center;
+    
+    max-height: 241px;
+    margin-bottom: 0;
+}
+.attention {
+    margin-left: 85px;
+    font-family: "Russo One";
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 400;
+    background: #fee300;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 435px;
+    min-width: 435px;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+.link {
+    background: green;
+    width: 0;
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 30%;
+    text-align: center;
+    
+}
+.answer {
+    margin-left: 85px;
+    font-size: 27.5px;
+    font-family: "Arial";
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    max-width: 1276px;
+    height: 70px;
+    position: relative;
+    padding-left: 56px;
+}
+.answer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 50px;
+    border: 10px solid white;
+    border-radius: 50px 50px 50px 50px;
+    left: 0;
+
+}
+.fieldin {
+    margin-top: 64px;
+    margin-left: 85px;
+    font-family: "Russo One";
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 400;
+    background: #fee300;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 435px;
+    
+    border-radius: 50px 50px 50px 50px;
+}
+.output {
+    background-color: green;
+    margin-top: 150px;
+}
+.darkfield {
+    background-color: rgba(0, 0, 0, 0.502);
+    max-width: 1653px;
+    height: 392px;
+    border: 7px solid #fee300;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+.fieldout {
+    margin-top: 64px;
+    font-family: "Russo One";
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 400;
+    background: #fee300;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 434px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px 50px 50px 50px;
+}
+button:focus {
+    outline: none;
+}
+button > h1 {
+    font-family: "Russo One";
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 400;
+    color: black;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+}
+button:hover {
+    cursor: pointer;
+}
+.fa.fa-check {
+    color: black;
+}
+#button-wrapper {
+    outline-offset: -10px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    min-width: 636px;
+    text-align: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+    -webkit-transition: .3s all ease .3s;
+    transition: .3s all ease .3s;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+button {
+    
+    width: 100%;
+    background: #fee300;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 0;
+    
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+    position: relative;
+}
+
+.pad {
+ 
+}
+
+button .fill {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    background: #fee300;
+    border-radius: 50px;
+}
+
+button .fa {
+    
+    
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 50px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+#button-wrapper.clicked {
+    
+    padding: 0;
+}
+
+#button-wrapper.clicked button {
+    
+    background: #ccc;
+    margin-top: 25px;
+    height: 0;
+}
+
+#button-wrapper.clicked button h1 {
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+}
+
+#button-wrapper.clicked button .fill {
+    
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .3s all ease .3s;
+    transition: 2s all ease .6s;
+}
+
+#button-wrapper.success button {
+    
+    margin: 0;
+    padding: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+#button-wrapper.success button .fa {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s all ease .3s;
+    transition: .3s all ease .3s;
+}
+#button-wrapper.success button .fa::after {
+    content: "еще раз";
+    height: 50px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 100px;
+    position: absolute;
+    background: #fee300; 
+
+}
+.darkfield1 {
+    background-color: rgba(0, 0, 0, 0.37);
+    max-width: 1653px;
+    height: 492px;
+    border: 7px solid #fee300;
+    border-radius: 50px;
+}
+
