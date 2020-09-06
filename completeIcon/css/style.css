@@ -399,7 +399,7 @@ body {
     cursor: default;
   }
 .fa::after {
-    animation: cssAnimation 10s ease-in both;
+    animation: cssAnimation 10s linear both;
 }
     @keyframes cssAnimation {
         from {
