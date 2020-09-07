@@ -386,7 +386,7 @@ body {
 }
  .fa::after {
     content: "Обработка завершена      \f11e";
-    font-size: 25px;
+    font-size: 27px;
     height: 100%;
     width: 650%;
     line-height: 50px;
@@ -399,7 +399,12 @@ body {
     cursor: default;
   }
 .fa::after {
-    animation: cssAnimation 10s linear both;
+    animation: cssAnimation 10s ease-in;
+    animation-direction: normal;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+
+
 }
     @keyframes cssAnimation {
         from {
