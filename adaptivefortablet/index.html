@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <ul class="panel"> 
+                <li id="container1">
+                  <div class="butt learn-more">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">menu</span>
+                </div>
+                </li>
+                <li id="container2">
+                  <div class="butt learn-more">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">sign up</span>
+                </div>
+                </li>
+                <li id="container3">
+                  <div class="butt learn-more">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">faq</span>
+                </div>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="brend">
+        <div class="wrapper">
+          <div class="centerbrend">
+            <div class="string">
+              <h1 class="light shadow line">TEXT</h1>
+              <p class="page">сервис повышения уникальности текста в автоматическом режиме</p>
+            </div>
+            <h1 class="changer shadow">changer</h1>
+          </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="wrapper">
+            <div class="moreinfo">
+              <h1 class="attention">Как пользоваться?</h1>
+              <span class="information">
+                <span class="rotate rotate1"></span>
+              </span>
+            </div>
+            <p class="answer">Просто вставьте свой текст в поле для ввода, дождитесь окончания обработки и получите новый текст, уникальность которого будет значительно выше.</p>
+            
+        </div>
+    </div>
+    <div class="wrapper">
+      <textarea class="darkfield" placeholder="Вставьте текст:" style="resize: none"></textarea>
+      <button id="button-wrapper">
+        <div class="button">
+          <h1 class="pad">Обработать!</h1>
+          <div class="fill"></div>
+          <div id="RStart" class="fa fa-undo"></div>
+          </div>
+      </button>
+    </div>
+      
+
+    
+   
+    <script defer src="script.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
+    <script> 
+
+      jQuery(document).ready(function() {
+        var btn = $('#button');  
+        $(window).scroll(function() {     
+          if ($(window).scrollTop() > 300) {
+             btn.addClass('show');
+           } else {
+             btn.removeClass('show');
+           }
+         });
+         btn.on('click', function(e) {
+           e.preventDefault();
+           $('html, body').animate({scrollTop:0}, '300');
+         });
+      });
+      </script>  
+</body>
+</html>
