@@ -323,7 +323,7 @@ body {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.602);
     height: 292px;
-    border: 5px solid violet;
+    border: 5px solid#2f0743;
     border-radius: 50px 50px 50px 50px;
     color: white;
     font-size: 30px;
@@ -429,7 +429,7 @@ body {
 
 #button-wrapper.clicked .button {
     margin: auto;
-    background: #770099;
+    background: #2f0743;
     margin-top: 25px;
     height: 0;
 }
@@ -595,6 +595,13 @@ button {
         padding-left: 17px;
         font-size: 84px;
     }
+    .attention {
+        min-width: 361px;
+        font-size: 24px;
+    }
+    .answer {
+        font-size: 21px;
+    }
 }
 @media (max-width: 960px){
     .page {
@@ -607,8 +614,12 @@ button {
         padding-left: calc(50% - 186px);    
         
     }
+    
     .brend {
         margin-top: 0px;
+    }
+    .moreinfo {
+        padding-left: calc(50% - 186px);
     }
     .light {
         text-shadow: 
