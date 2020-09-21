@@ -23,6 +23,13 @@ body {
     overflow: hidden;
     
 }
+.wrapper1 {
+    margin-left: 130px;
+    margin-right: 130px;
+    margin: 0 auto;
+    max-width: 1553px;
+    position: relative;
+}
 .header {
     display: block;
     width: 100%;
@@ -530,7 +537,7 @@ button {
         right: -90px;
     }
     .page {
-        margin-right: -102px;
+        margin-right: -100px;
     }
     .shadow {
         margin-left: 8px;
@@ -597,7 +604,7 @@ button {
         display: none;
     }
     .centerbrend {
-        padding-left: calc(50% - 186px);
+        padding-left: calc(50% - 186px);    
         
     }
     .brend {
@@ -609,8 +616,3 @@ button {
         0px 50px 250px #ffe300;
     }
 }
-
-
-
-
-
