@@ -1,0 +1,371 @@
+@font-face {
+	font-family: 'MRSEAVEI';
+	src: url('fonts/MRSEAVEI.eot');
+	src: local('☺'), url('fonts/MRSEAVEI.woff') format('woff'), url('fonts/MRSEAVEI.ttf') format('truetype'), url('fonts/MRSEAVEI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe WP N';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe WP N'), url('fonts/SegoeWPN.woff') format('woff');
+}
+
+body {
+    margin: 0;
+   
+}
+.leftArrow {
+    width: 42px;
+    height: 42px;
+    border: 4px solid #7a7d7c;
+    border-radius: 50%;
+    position: relative;
+}
+.leftArrow:before {
+    content: '';
+    position: absolute;
+    border: 12px solid transparent;
+    border-right: 12px solid #7a7d7c;
+}
+.rightArrow {
+    width: 42px;
+    height: 42px;
+    border: 4px solid #7a7d7c;
+    border-radius: 50%;
+    position: relative;
+}
+.rightArrow:before {
+    content: '';
+    position: absolute;
+    border: 12px solid transparent;
+    border-left: 12px solid #7a7d7c;
+    left: 50%;
+}
+.logo {
+    font-family: 'MRSEAVEI';
+    color: #8d9ea3;
+    font-weight: bold;
+    font-size: 118px;
+    margin-left: 89px;
+    margin-top: 0px;
+}
+
+.logo a {
+    color: #8d9ea3;
+    text-decoration:  none;
+    transition: 1s;
+}
+.logo a:hover {
+    color: #175b3b;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+}
+.backHeader {
+    background-image: url("images/backhead.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.menu {
+    display: flex;
+    margin-right: 50px;
+    margin-top: 56px;
+}
+.menu:first-child {
+    margin-left: 0;
+}
+.navElem {
+    font-family: 'Segoe WP N';
+    margin-left: 66px;
+    list-style-type: none;
+}
+.navElem > a {
+    text-decoration: none;
+    color: #e7eced;
+}
+.buttonHeader {
+    background-color: #175b3b;
+    border: 0;
+    color: #e3ece8;
+    font-size: 22px;
+    font-family: 'Segoe WP N';
+}
+.buttonHeader:hover {
+    cursor: pointer;
+}
+.secondSection {
+    max-height: 289px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.moreRightImg {
+    margin-left: 38px;
+}
+.img {
+    margin-right: 38px;
+    margin-bottom: -39px;
+}
+.title {
+    max-width: 336px;
+}
+.weightBold {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe WP N';
+    font-weight: bold;
+    font-size: 66px;
+}
+.weightNormal {
+    margin: 0;
+    padding: 0;   
+    font-family: 'Segoe WP N';
+    color: white;
+    font-weight: normal;
+    font-size: 42px;
+}
+.buttonHeader {
+    margin-top: 41px;
+    height: 38px;
+    width: 138px;
+}
+.mainMenu {
+    height: 300px;
+    margin-top: 52px;
+    border-bottom: 2px solid#dedede;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-bottom: 0px;
+}
+.mainElem:nth-child(2) {
+    padding: 24px 52px;
+    border-bottom: 4px solid white;
+    border-left: 2px solid #dedede; 
+    border-right: 2px solid #dedede; 
+    border-top: 2px solid #dedede;
+    ;
+} 
+.mainElem > a {
+    text-decoration: none;
+    color: #8d8c8c;
+}
+.mainElem {
+    list-style-type: none;
+}
+.mainElem > a > p {
+    font-family: 'Segoe WP N';
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 126px;
+    text-align: center;
+}
+.sectionContent {
+    margin-top: 57px;
+    border-bottom: 2px solid #dedede;
+}
+.sectionContent > img {
+    display: block;
+    margin: 0 auto;
+}
+.contentPart {
+    margin-bottom: 68px;
+}
+.contentPart > p {
+    margin-bottom: 0;
+}
+.contentPart > h2,
+.contentPart > p {
+    margin-left: 58px;
+    margin-right: 58px;
+    font-weight: 400;
+    color: #4f4f4f;
+    font-family: 'Segoe WP N';
+}
+.answers {
+    list-style-type: none;
+}
+.answers li {
+    font-family: 'Segoe WP N';
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    color: #8d8c8c;
+    
+}
+.answers li:before {
+    content: '';
+    background: url("images/accept.png");
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 0;
+}
+
+#article {
+    display: flex;
+    margin-top: 29px;
+    margin-bottom: 74px;
+}
+.list {
+    max-height: 312px;
+    margin-bottom: 23px;
+}
+.list > h2 {
+    padding-left: 40px;
+    font-family: 'Segoe WP N';
+    color: #8d8c8c;
+    font-weight: normal;
+    font-size: 33px;
+    margin-bottom: 0;
+}
+.forms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-top: 23px;
+    border-top: 2px solid #dedede;
+}
+.leftForm {
+    border-radius: 7px;
+    width: 469px;
+    height: 109px;
+    background-color: #e67624;
+    padding-left: 26px;
+}
+.rightForm {
+    border-radius: 7px;
+    width: 469px;
+    height: 109px;
+    background-color: #01d4f3;
+    padding-left: 26px;
+}
+.leftForm h3 {
+    color: white;
+    font-family: 'Segoe WP N';
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+#login,
+#password {
+    color:#828282;
+    background-color: #e8e8e8;
+    border: none;
+    height: 26px;
+    width: 150px;
+}
+#authorization {
+    cursor: pointer;
+    height: 30px;
+    width: 94px;
+    background-color: #444444;
+    color: white;
+    border: none;
+}
+#email {
+    width: 264px;
+    height: 26px;
+    background-color: #e8e8e8;
+    color:#828282;
+    border: none;
+}
+.rightForm h3 {
+    color: white;
+    font-family: 'Segoe WP N';
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+#subscribe {
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 111px;
+    background-color: #029bb1;
+    margin-left: 50px;
+}
+
+.footer {
+    box-sizing: border-box;
+    height: 243px;
+    background-color: #292626;
+    background-size: 100%;
+    bottom: 0;
+}
+.footerContent {
+    display: flex;
+    max-height: 243px;
+    padding-left: 45px;
+}
+.thirdColumn {
+    height: 78px;
+    width: 323px;
+}
+.thirdColumn p {
+    color: #aaabaa;
+    font-family: 'Segoe WP N';
+    font-size: 13px;
+    font-weight: normal;
+}
+.thirdColumn b {
+    display: block;
+    max-width: 141px;
+    color: #c9c8c8;
+    font-family: 'Segoe WP N';
+    font-size: 13px;
+}
+.firstColumn h3,
+.secondColumn h3,
+.thirdColumn h3 {
+    color: white;
+    font-family: 'Segoe WP N';
+    font-size: 20px;
+    font-weight: normal;
+}
+.firstColumn ul,
+.secondColumn ul {
+    padding-left: 0;
+    padding-right: 88px;
+    list-style-type: none;
+    color: #aaaaaa;
+    font-family: 'Segoe WP N';
+    font-size: 13px;
+    font-weight: normal;
+
+}
+.fourthColumn {
+    margin-left: 88px;
+}
+.logoFooter {
+    font-family: 'MRSEAVEI';
+    color: #5c5a5a;
+    font-weight: bold;
+    font-size: 118px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.logoFooter a {
+
+    text-decoration: none;
+    color: #5c5a5a;
+    transition: 1s;
+}
+.logoFooter a:hover {
+    color: white;
+}
+.fourthColumn p {
+    color: #dfe0df;
+}

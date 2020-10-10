@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Минивен</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__header-line">
+            <div class="logo-hidden">
+                <div class="logo">
+                    <div class="logo__content">
+                        <img src="icon/Group 165.svg" alt="" class="logo__content-svg">
+                    </div> 
+                </div>
+            </div>
+            <nav class="header__navigation">
+                <ul class="header__list_navigation">
+                    <li class="header__point"><a class="header__point-link" href="">Главная</a></li>
+                    <li class="header__point"><a class="header__point-link" href="">Контакты</a></li>
+                    <li class="header__point"><a class="header__point-link" href="">Тарифы</a></li>
+                    <li class="header__point_margin"><a class="header__point-link" href="">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <div class="header__contacts-number">8 (989) 523 43 43</div>
+                <div class="contacts-social header__contacts-social">
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg" src="icon/Frame.svg" alt=""></a>
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg" src="icon/instagram (2).svg" alt=""></a>
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg" src="icon/odnoklassniki.svg" alt=""></a>
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg_margin" src="icon/facebook 2.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-section">
+        <div class="container">
+            <div class="main-info">
+                <h1 class="main-info__title">Заказ минивэнов</h1>
+                <p class="main-info__description">Комфорт наших клиентов превыше всего!</p>
+                <button class="button-order main-info__button-order">Заказать</button> <!--Нужно ли здесь сделать микс,добавив класс .main-info__button-order?-->
+            </div>
+            <div class="slider main-section__slider">
+                <div class="slider__dot_color"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+            </div>
+        </div>
+        <button class="button-left header__button-left"></button>
+        <button class="button-right header__button-right"></button>
+    </main>
+
+    <section class="dignity">
+        <div class="container">
+            <div class="dignity-items">
+                <div class="dignity-item">
+                    <img class="dignity-item__img" src="icon/speed.svg" alt="">
+                    <div class="dignity-item__text">Быстро</div>
+                </div>
+                <div class="dignity-item">
+                    <img class="dignity-item__img" src="icon/theatre-seats 1.svg" alt="">
+                    <div class="dignity-item__text">Комфортно</div>
+                </div>
+                <div class="dignity-item">
+                    <img class="dignity-item__img" src="icon/comfort.svg" alt="">
+                    <div class="dignity-item__text">Актуально</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lot-car">
+        <div class="container">
+            <div class="lot-info">
+                <h1 class="section-title">Люксовый минивэн Toyota Alphard</h1>
+                <p class="lot-info__description">Российские дилеры Toyota начали прием заказов на минивэн Alphard, который недоступен для жителей Европы и Северной Америки. Судя по оснащению и цене, автомобиль позиционируется компанией в качестве премиального минивэна...
+                </p>
+                <button class="button-order button-order_color">Заказать</button>
+                <div class="change-button">
+                    <button class="button-left change-button__button-left"></button>
+                    <button class="button-right change-button__button-right"></button>
+                </div>
+            </div>
+        </div>
+        <img class="lot-car__img-car" src="image/tayota.png" alt=""> <!--Можно ли сделать это блоком(img class="img-car")?(Наверное нет,ведь этот контент встречается только в этом месте)-->
+    </section>
+
+    <section class="map">
+        <iframe class="map__live-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22923.729376943902!2d39.070909699999994!3d44.09437215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1602166303404!5m2!1sru!2sru" width="1403.7" height="498" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>>
+    </section>
+
+    <section class="tariffs">
+        <div class="section-form"> <!--или элемент "tariffs__section-form"?-->
+            <h2 class="section-form__title">Бронирование минивэнов</h2> 
+            <div class="form-container__all-input"> <!--нужно ли заворачивать сюда инпуты,или для каждой писать модификатор?-->
+                <input class="form__input" placeholder="Имя" type="input">
+                <input class="form__input" placeholder="Тел.">
+                <input class="form__input_margin" placeholder="Время и дата">
+                <input class="form__input" placeholder="Адрес отправления">
+                <input class="form__input" placeholder="Адрес прибытия">
+                <input class="form__input_margin" placeholder="Количество человек">
+            </div>   <!--вопрос про оформление лэйблов в БЭМ-->
+            <textarea class="form__description-field" placeholder="Описание"></textarea>
+            <button class="button-form form-container__button-form">Заказать</button> 
+        </div>
+        <div class="container">
+            <h1 class="tariffs__title title">Тарифы</h1>
+            <div class="all-tariffs">
+                <a class="button-left all-tarrifs__button-left" href="" alt="back"></a>
+                <div class="info-tariff">
+                    <div class="info-tariff__route-panel">
+                        <h3 class="info-tariff__price">2 500</h3> <!--или блок "price"? Или верхний элемент "info-tariffs__route-panel" сделать блоком7-->
+                        <div class="info-tariff__route">
+                            <h4 class="info-tariff__route-text">Таганрог</h4>
+                            <img class="info-tariff__vector" src="icon/route.svg" alt="">
+                            <h4 class="info-tariff__route-text">Платов</h4>  
+                        </div>
+                    </div>
+                    <div class="info-tariff__choice-panel">
+                        <ul class="info-tariff__choice-list">
+                            <li class="info-tariff__choice">Подача машины на адресс</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Детское кресло</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Помощь с багажом</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Час ожидания</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Отчетная документация</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Встреча с табличкой</li>
+                            <div class="info-tariff__choice-decor"></div>
+                        </ul>
+                        <button class="button-order button-order_size">Заказать</button>   
+                    </div>
+                </div>
+                <div class="info-tariff">
+                    <div class="info-tariff__route-panel">
+                        <h3 class="info-tariff__price">2 500</h3> 
+                        <div class="info-tariff__route">
+                            <h4 class="info-tariff__route-text">Таганрог</h4>
+                            <img class="info-tariff__vector" src="icon/route.svg" alt="">
+                            <h4 class="info-tariff__route-text">Платов</h4>  
+                        </div>
+                    </div>
+                    <div class="info-tariff__choice-panel">
+                        <ul class="info-tariff__choice-list">
+                            <li class="info-tariff__choice">Подача машины на адресс</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Детское кресло</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Помощь с багажом</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Час ожидания</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Отчетная документация</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Встреча с табличкой</li>
+                            <div class="info-tariff__choice-decor"></div>
+                        </ul>
+                        <button class="button-order button-order_size">Заказать</button>   
+                    </div>
+                </div>
+                <div class="info-tariff">
+                    <div class="info-tariff__route-panel">
+                        <h3 class="info-tariff__price">2 500</h3> 
+                        <div class="info-tariff__route">
+                            <h4 class="info-tariff__route-text">Таганрог</h4>
+                            <img class="info-tariff__vector" src="icon/route.svg" alt="">
+                            <h4 class="info-tariff__route-text">Платов</h4>  
+                        </div>
+                    </div>
+                    <div class="info-tariff__choice-panel">
+                        <ul class="info-tariff__choice-list">
+                            <li class="info-tariff__choice">Подача машины на адресс</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Детское кресло</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Помощь с багажом</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Час ожидания</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Отчетная документация</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Встреча с табличкой</li>
+                            <div class="info-tariff__choice-decor"></div>
+                        </ul>
+                        <button class="button-order button-order_size">Заказать</button>   
+                    </div>
+                </div>
+                <div class="info-tariff">
+                    <div class="info-tariff__route-panel">
+                        <h3 class="info-tariff__price">2 500</h3> 
+                        <div class="info-tariff__route">
+                            <h4 class="info-tariff__route-text">Таганрог</h4>
+                            <img class="info-tariff__vector" src="icon/route.svg" alt="">
+                            <h4 class="info-tariff__route-text">Платов</h4>  
+                        </div>
+                    </div>
+                    <div class="info-tariff__choice-panel">
+                        <ul class="info-tariff__choice-list">
+                            <li class="info-tariff__choice">Подача машины на адресс</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Детское кресло</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Помощь с багажом</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Час ожидания</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Отчетная документация</li>
+                            <div class="info-tariff__choice-decor"></div>
+                            <li class="info-tariff__choice">Встреча с табличкой</li>
+                            <div class="info-tariff__choice-decor"></div>
+                        </ul>
+                        <button class="button-order button-order_size">Заказать</button>   
+                    </div>
+                </div>
+                <a class="button-right all-tarrifs__button-right" href="" alt="back"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-comments">
+        <img class="section-comments__icon" src="icon/comment.svg"></img>
+        <div class="container">
+            <div class="all-comments">
+                <a class="button-left all-comments__button-left" href="" alt="back"></a>
+                <div class="comment all-comments__comment">
+                    <div class="comment__comment-border">
+                        <h4 class="comment__author-comment">Петр</h4>
+                        <div class="comment__stars">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Stars 5.svg" alt="">
+                        </div>
+                        <p class="comment__text-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est</p>
+                    </div>
+                </div>
+                <div class="comment all-comments__comment">
+                    <div class="comment__comment-border">
+                        <h4 class="comment__author-comment">Анна</h4>
+                        <div class="comment__stars">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                            <img class="comment__star" src="icon/Star 1.svg" alt="">
+                        </div>
+                        <p class="comment__text-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est</p>
+                    </div>
+                </div>
+                <a class="button-right all-comments__button-right" href="" alt="back"></a>
+            </div>
+            <div class="slider comment-section__slider">
+                <div class="slider__dot_color-comm"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__info-about-map">
+                    <h4 class="title-about">Карта сайта</h4>
+                    <nav class="info-map__nav">
+                        <ul class="info-map__items-left">
+                            <li class="info-map__item-nav">Главная</li>
+                            <li class="info-map__item-nav">О нас</li>
+                            <li class="info-map__item-nav">Тарифы</li>
+                        </ul>
+                        <ul class="info-map__items-right">
+                            <li class="info-map__item-nav">Бронирование</li>
+                            <li class="info-map__item-nav">Отзывы</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="info-minicar">
+                    <h4 class="title-about info-minicar__title-about">О минивэнах</h4>
+                    <p class="info-minicar__text">Минивэн - легковой автомобиль с вместительностью до 8 человек, адаптивный круиз-контроль, мониторинг слепых зон! Предоставляются детские кресла, комфорт и безопасность для всех пассажиров гарантирован.</p>
+                </div>
+                <div class="footer__contacts">
+                    <h4 class="title-about info-minicar__title-about">Контакты</h4>
+                    <div class="footer__contacts-items">
+                        <div class="footer__contacts-left">
+                            <div class="footer__number">8 (989) 543 23 23</div>
+                            <div class="footer__place">Ростовская область, г. Таганрог</div>
+                        </div>
+                        <div class="footer__mail">alfime@taxi.ru</div> 
+                    </div>  
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contacts__firm">© 2019 “Alfime” - Минивэны</div>
+                <div class="footer-social">
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg" src="icon/vksmall.svg" alt=""></a>
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg" src="icon/instasmall.svg" alt=""></a>
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg" src="icon/odnoklassnikismall.svg" alt=""></a>
+                    <a class="header__link-social" href="#"><img class="contacts-social__svg_margin" src="icon/facebooksmall.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-firm">Web Studio Aurora</div>
+        </div>
+    </footer>
+</body>
+</html> 
+<!--4-5 часов-->
